@@ -33,7 +33,7 @@ export default function ButtonAppBar() {
       <AppBar position="static">
         <Toolbar className={classes.toolbar} >
           <Typography variant="h6" className={classes.title2}>
-            SV COLLEGES
+            SV COLLEGES2
           </Typography>
         </Toolbar>
       </AppBar>
