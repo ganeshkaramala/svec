@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Spinner from './components/spinner/spinner';
 
 class App extends Component {
 
@@ -22,7 +23,8 @@ class App extends Component {
     render(){
           return (
             <div >
-              <Header></Header>  
+              <Header></Header> 
+			<Spinner/>
             </div>
         );
     }
