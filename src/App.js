@@ -1,8 +1,5 @@
 import React,{Component} from 'react';
-//import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Spinner from './components/spinner/spinner';
 
 class App extends Component {
 
@@ -23,8 +20,30 @@ class App extends Component {
     render(){
           return (
             <div >
-              <Header></Header> 
-			<Spinner/>
+                  <h1>Hello World</h1>
+                  <div>
+                    <button class="ui primary button">Primary</button>
+                    <button class="ui secondary button">Secondary</button>
+                  </div>
+				  
+				  <div class="ui ordered steps">
+  <div class="completed step">
+    <div class="content">
+      <div class="title">A</div>
+      <div class="description">Choose your shipping options</div>
+    </div>
+  </div>
+  <div class="active step">
+    <div class="content">
+      <div class="title">B</div>
+      <div class="description">Enter billing information</div>
+    </div>
+  </div>
+  <div class=" step">
+    <div class="content"><div class="title">Confirm Order</div></div>
+  </div>
+</div>
+                  
             </div>
         );
     }
