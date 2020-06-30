@@ -1,0 +1,60 @@
+.container{
+  background-color:lightcyan;
+  font-size: 20px;
+  padding: 1%;
+  margin: 1% 0% 0% 0%;
+}
+.fedchoice{
+  color:yellow;
+  font-size: 30px;
+}
+.bank{
+  color: white;
+  font-size: 30px;
+}
+.mainsection{
+  background-color:lightgreen;
+  padding:1%;
+}
+.logout{
+  text-align: right;
+}
+.h1{
+  text-align: center;
+}
+.asterisk{
+  color: red;
+}
+.deletecustomer{
+  margin: 3px 480px;
+}
+.submitbutton{
+  color:rgb(107, 14, 14);
+  margin: 1%;
+  font-size: 25px;
+  background-color: lightcyan;
+}
+.footer{
+  background-color:lightgreen;
+  font-size: 36px;
+  padding: 3%;
+}
+.footertext1{
+  margin: 1%;
+  color:black;
+}
+.footertext2{
+  margin: 1% 1% 1% 39%;
+  color: black;
+}
+.footertext3{
+  margin: 1% 1% 1% 5%;
+  color: black;
+}
+.containersubclass{
+  margin: 10px;
+  color: black;
+}
+.a{
+  font-size: 15px;
+}

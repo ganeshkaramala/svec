@@ -1,0 +1,13 @@
+.menu{
+  margin: 0px;
+  padding: 0px;
+}
+ul li{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 130px;
+  background-color: lightcoral;
+  border: 1px solid white;
+
+}
