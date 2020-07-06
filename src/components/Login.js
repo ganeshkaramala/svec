@@ -1,32 +1,63 @@
 import React from 'react';
 import './Login.css';
-import 'semantic-ui-react';
+
 class Login extends React.Component{
+  
+  constructor(props){
+    super(props);
+    this.state = {}; 
+    this.onSignupButtonPress = this.onSignupButtonPress.bind(this)
+
+  }  
+
+  onSignupButtonPress(){
+    this.props.history.push("/register");
+  }
+
 
   render() {
     return(
-      <div>
-        <div className='login'>
-          <form className='form' action=''>
-            <div className='header'>Login</div><br></br>
-            <div className='form'>
-              <div className='field'>
-                <input className='email' type="text" placeholder="Username" /><br></br><br></br>
-                <div>
-                  <input className='password' type="password" placeholder="password" />
-                  <br></br><br></br>
-                </div>
-              </div>
-              <div>
-                <button className='login-button' type="submit">Login</button><br></br>
-                 <div className='or'>------------  or  -------------</div><br></br>
-                <button className='newbutton' type="submit">Create new account</button><br></br>
-                <div className='forgotpassword'> forgotten password?</div>
-              </div>
-            </div>
-          </form>
+
+      <div class="ui grid">
+        <div class="left floated eight wide column">
+          
+        </div>
+        <div class="right floated eight wide column">
+                          <div class="ui placeholder segment">
+                          <div class="ui stackable very relaxed two column grid">
+                            <div class="column">
+                              <form class="ui form">
+                                <div class="field">
+                                  <label>Username</label>
+                                  <div class="ui left icon input">
+                                    <input type="text" placeholder="Username" />
+                                    <i aria-hidden="true" class="user icon"></i>
+                                  </div>
+                                </div>
+                                <div class="field">
+                                  <label>Password</label>
+                                  <div class="ui left icon input">
+                                    <input type="password" placeholder="Password" />
+                                    <i aria-hidden="true" class="lock icon"></i>
+                                  </div>
+                                </div>
+                                <button class="ui green button">Login</button>
+                              </form>
+                            </div>
+                            <div class="middle aligned column">
+                              <button class="ui big button orange" onClick={this.onSignupButtonPress} >
+                                <i aria-hidden="true" class="signup icon"></i>
+                                 Sign up 
+                              </button>
+                            </div>
+                          </div>
+                          <div class="ui vertical divider">Or</div>
+                        </div>     
         </div>
       </div>
+
+
+     
     )
   }
 }

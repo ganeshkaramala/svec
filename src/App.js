@@ -1,5 +1,17 @@
 import React,{Component} from 'react';
+
+import { 
+  BrowserRouter as Router, 
+  Route, 
+  Link, 
+  Switch 
+} from 'react-router-dom'; 
+
 import './App.css';
+import Login from './components/Login';
+
+import Register from './components/Register';
+
 
 class App extends Component {
 
@@ -19,33 +31,30 @@ class App extends Component {
 
     render(){
           return (
-            <div >
-                  <h1>Hello World</h1>
-                  <div>
-                    <button class="ui primary button">Primary</button>
-                    <button class="ui secondary button">Secondary</button>
+             <Router> 
+             <div className="app"> 
+                
+               <div class="ui inverted top fixed menu myheader">
+                  <div class="ui container">
+                    <a href="/" class="header item">
+                        <Link to="/">My Bank </Link>
+                      </a>
                   </div>
-				  
-				  <div class="ui ordered steps">
-  <div class="completed step">
-    <div class="content">
-      <div class="title">A</div>
-      <div class="description">Choose your shipping options</div>
-    </div>
-  </div>
-  <div class="active step">
-    <div class="content">
-      <div class="title">B</div>
-      <div class="description">Enter billing information</div>
-    </div>
-  </div>
-  <div class=" step">
-    <div class="content"><div class="title">Confirm Order</div></div>
-  </div>
-</div>
-                  
-            </div>
-        );
+              </div>
+
+              
+             <div className="appbody"> 
+                <Switch> 
+                  <Route exact path='/' component={Login}></Route> 
+                  <Route exact path='/register' component={Register}></Route> 
+                  <Route exact path='/contact' component={Login}></Route> 
+                </Switch> 
+              </div>
+              
+            </div> 
+         </Router> 
+             
+		      );
     }
 }
 

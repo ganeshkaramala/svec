@@ -1,9 +1,4 @@
-.container{
-  background-color:lightcyan;
-  font-size: 20px;
-  padding: 1%;
-  margin: 1% 0% 0% 0%;
-}
+
 .fedchoice{
   color:yellow;
   font-size: 30px;
@@ -61,7 +56,4 @@
 .containersubclass{
   margin: 10px;
   color: black;
-}
-.a{
-  font-size: 15px;
 }
